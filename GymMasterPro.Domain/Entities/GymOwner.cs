@@ -14,6 +14,7 @@ namespace GymMasterPro.Domain.Entities
         public IReadOnlyCollection<Gym> Gyms { get { return _gyms.ToArray();  } }
         public GymOwner(FullName name, Address address, Document document)
         {
+            Id = new Guid();
             Name = name;
             Address = address;
             Document = document;
