@@ -7,6 +7,7 @@ namespace GymMasterPro.Domain.Entities
     {
         private IList<Gym> _gyms;
 
+        public Guid Id { get; private set; }
         public FullName Name { get; private set; }
         public Address Address { get; private set; }
         public Document Document { get; private set; }
